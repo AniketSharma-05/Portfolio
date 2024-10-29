@@ -1,0 +1,17 @@
+<template>
+    <div class="quicklinks slds-p-top_large">
+        <h1 class="slds-text-align_center">Quick Links</h1>
+        <!-- created row -->
+        <div class="slds-grid slds-wrap">
+            <template for:each={data} for:item="quicklinks">
+                <!-- coloum created -->
+                <div onclick={handleClick} data-id={quicklinks.id}
+                    class="slds-col image_section slds-aling_absolute-center slds-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12 " key={quicklinks.id}>
+                    <img src={quicklinks.image} />
+                    <div class="overlay"></div>
+                    <div class="title_class slds-text-align_center">{quicklinks.Text}</div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

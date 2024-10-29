@@ -1,0 +1,26 @@
+<template>
+    <div class="outer-container">
+        <div class="Certificate-container">
+            <!-- Loop through the Certificates array and create a card for each Certificate -->
+            <template for:each={Certificates} for:item="Certificate">
+                <div key={Certificate.id} class="Certificate-card" >
+                    <div class="card-content">
+                        <h3>{Certificate.name}</h3>
+                        <p><strong>Skills Learned:</strong> {Certificate.skills}</p>
+                        <p><strong>Tools Used:</strong> {Certificate.tools}</p>
+                        
+                    </div>
+                    <div class="card-hover slds-p-around_medium ">
+                       
+                        <a data-url={Certificate.githubUrl} onclick={navigateToGitHub}>
+                            <img src={githubLogo} />
+                        </a>
+                        <a data-url={Certificate.pdfUrl} onclick={navigateToPDF}>
+                            <img src={pdfLogo} />
+                        </a>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

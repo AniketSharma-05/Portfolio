@@ -1,0 +1,19 @@
+<template>
+    <div class="outer-container">
+        <div class="projects-container">
+            <!-- Loop through the projects array and create a card for each project -->
+            <template for:each={projects} for:item="project">
+                <div key={project.name} class="project-card" onclick={navigateToGitHub} data-url={project.githubUrl}>
+                    <div class="card-content">
+                        <h3>{project.name}</h3>
+                        <p><strong>Tools:</strong> {project.tools}</p>
+                        <p><strong>Skills:</strong> {project.skills}</p>
+                    </div>
+                    <div class="card-hover">
+                        <p>{project.description}</p>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

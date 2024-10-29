@@ -1,0 +1,81 @@
+.quicklinks h1{
+    font-size: 1.5rem;
+    color: #B0B0B0;
+    text-decoration: underline;
+}
+
+
+
+.image_section img{
+   
+    height: 10rem;  
+    width: 22vw;
+    border-radius: 0.6rem;
+    background-size: cover;
+    margin-top: 2rem;
+    margin-left: 3rem;
+   
+   }
+
+   .image_section{
+    position:relative;
+    cursor: pointer;
+    
+   }
+
+
+ 
+
+ .overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 10rem;
+    width: 22vw;
+    opacity: 0.6;
+    background-color: black;
+    border-radius: 0.6rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+    
+  .title_class{
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    .image_section img{
+        height: 12rem;  
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    
+    .overlay{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 12rem;
+        width: 100%;
+        opacity: 0.6;
+        background-color: black;
+        border-radius: 0.6rem;
+        margin-top: 1rem;
+        margin-left: 0;
+      }
+      .title_class{
+        position: absolute;
+        color: white;
+        font-size: 1.2rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+   
+}
+

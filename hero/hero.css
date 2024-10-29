@@ -1,0 +1,91 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.hero_left{
+   padding: 50px;
+
+}
+.hero_left h1{
+    font-size: 48px;
+    font-weight: bold;
+    font-family:sans-serif; 
+    margin-bottom: 5px;
+}
+.hero_left p{
+    font-size: 16px;
+    word-spacing: 10px;
+    margin-bottom: 5px;
+
+}
+.hero_left button {
+    width: 120px;
+    height: 40px;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 5px,20px,5px,20px;
+
+   
+
+}
+
+
+.hero_right img{
+    width: 100%;
+}
+
+/* media query for mobile  */
+@media (min-width: 320px) and (max-width: 480px) {
+    .hero_right img{
+       margin-top: 20px;
+    }
+    .hero_left{
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     
+     }
+    .hero_left h1{
+        font-size: 24px;
+       
+    }               
+    .hero_left button{
+        width: 80px;
+        height: 40px;
+                
+    }
+
+}
+
+/* media qurey for tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero_right img{
+        height: 100%;
+     }
+    .hero_left h1{
+        font-size: 32px;
+        text-align: left;
+        
+    }
+    .hero_left p{
+        font-size: 14px;
+        
+    
+    }
+    .hero_left button {
+        width: 120px;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 5px,20px,5px,20px;
+    
+    }
+  }

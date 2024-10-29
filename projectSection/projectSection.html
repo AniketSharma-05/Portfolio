@@ -1,0 +1,36 @@
+<template>
+    <div class=" slds-p-around_none slds-m-top_small slds-m-bottom_medium">
+        <lightning-layout multiple-rows>
+            <!-- left side coloum -->
+             <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6" class="slds-order_2 slds-large-order_1" >
+                <div class="slds-p-around-large">
+                <div class="project_title ">
+                    <h1>Projects</h1>
+                </div>
+                <template if:true={projectData}>
+                    <lightning-accordion class="accordion_section">
+                        <template for:each={projectData} for:item="project">
+                        <lightning-accordion-section key={project.id} name={project.name} label={project.name}>
+                            <div class="slds-m-top_small">
+                                <p class="para_text">{project.description}</p>
+                                <p class="para_text slds-p-top_medium" ><strong>Technology: </strong>{project.technology}</p>
+                                <p class="para_text slds-p-top_medium"  if:true={project.Website}><strong>Website: </strong> <a target="_blank" href={project.Website}>{project.Website}</a>"</p>
+
+                            </div>
+                        </lightning-accordion-section>
+                        </template>
+                    </lightning-accordion>
+                </template>
+                </div>
+             </lightning-layout-item>
+             <!-- Right side coloum -->
+             <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6"  class="slds-align_absolute-center slds-order_1 slds-large-order_2">
+                <div class="slds-p-around medium  image_section">
+                    <img src={projectImage} />
+                    
+                </div>
+
+             </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

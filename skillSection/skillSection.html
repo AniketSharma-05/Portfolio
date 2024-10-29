@@ -1,0 +1,32 @@
+<template>
+    <div class="about_div slds-p-around_none slds-m-top_small slds-m-bottom_medium">
+
+        <lightning-layout multiple-rows>
+            <!-- left side -->
+            <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6" class="slds-align_absolute-center">
+                <div class="skill_pic">
+                    <img src={skillImage} />
+                </div>
+            </lightning-layout-item>
+
+            <!-- right side -->
+            <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6" class="slds-align_absolute-center">
+                <div class="skills">
+                    <div class="slds-text-align_center">
+                        <h2>Skills</h2>
+                        
+                    </div>
+                    <div>
+                        <ul>
+                            <li><strong> ●Salesforce Development:</strong> Apex, Triggers, Flows, LWC, Aura Components, CRM</li>
+                            <li><strong> ●Web Technologies:</strong> HTML, CSS, PHP, JavaScript</li>
+                            <li><strong> ●Programming Languages:</strong> C++, Python</li>
+                            <li><strong> ●Development Tools:</strong> VS Code, Git, Salesforce Developer Console, Eclipse</li>
+                            <li><strong> ●Design Tools:</strong> Figma, AdobeXD, Mural</li>
+                            </ul>
+                    </div>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

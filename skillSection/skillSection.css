@@ -1,0 +1,48 @@
+.about_div{
+    background-color: #f6f6f6;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    
+}
+.about_div .skills h2{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 0%;
+    margin-bottom: 2rem;
+    
+    
+}
+.about_div .skills li{
+    font-size: 16px;
+    margin-bottom:1rem ;
+}
+
+.about_div .skill_pic img {
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem;
+    outline-width: 2rem;
+    outline-color: black;
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .about_div .skills h2{
+        font-size: 24px;
+        margin-bottom: 1rem;
+        width: 21%;
+    }
+
+    .about_div .skills li{
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+        
+    }
+ 
+  
+}

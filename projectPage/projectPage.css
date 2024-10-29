@@ -1,0 +1,93 @@
+/* Outer container styling */
+.outer-container {
+    background-color: #f0f0f0; /* Light grey background */
+    border: 1px solid #d3d3d3; /* Subtle grey border */
+    border-radius: 0.6rem; /* Rounded corners */
+    padding: 20px; /* Inner padding for spacing */
+    margin: 20px; /* Outer margin to separate from other content */
+    box-shadow: 0px 4px 10px rgba(175, 38, 224, 0.242);
+}
+
+/* Projects container (inside the outer container) */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px; /* Adjust padding for spacing within the outer container */
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 8px 16px rgba(175, 38, 224, 0.242);
+    background-color: #f9f9f9;
+}
+
+.card-content {
+    text-align: center;
+    color: #333;
+    transition: opacity 0.6s ease;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+}
+
+.project-card:hover .card-hover {
+    opacity: 1;
+}
+
+.project-card:hover .card-content {
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
